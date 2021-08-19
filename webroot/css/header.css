@@ -1,0 +1,41 @@
+body > header .container {
+}
+
+body > header h1 {
+  text-align: center;
+}
+
+.header_container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+header nav {
+  text-align: center;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* header nav ul li:not(first-of-type) {
+  padding-left: 18px;
+} */
+
+.button {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header_container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .button {
+    display: block;
+  }
+}
